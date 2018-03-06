@@ -1,0 +1,20 @@
+
+ .image-box{border-color: rgb(14, 13, 13);
+     border-width: 4px;
+    border-style: solid;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;}
+
+    body{background-color:rgb(236, 241, 241)}
+    h3{color:rgb(247, 247, 247);
+      background-color:slategray}
+    ul{background-color:rgba(219, 217, 189, 0.966)}
+    ol{background-color:rgba(219, 217, 189, 0.966)}
+    #pers {color:white; background-color:#df9d0e}
+    .me {color: rgb(206, 125, 20)}
+    
+  
+    
+    
