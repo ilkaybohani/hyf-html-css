@@ -1,0 +1,181 @@
+
+
+
+
+
+
+
+
+
+body{background:url(http://1.bp.blogspot.com/-7e7lNvicuUs/ULd2p2zX6qI/AAAAAAAAEME/dMaMTd9YChg/w1200-h630-p-k-no-nu/northbynorthwest.jpg)no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+     }
+
+    
+    
+
+
+
+
+h1{text-align: center;
+   
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgba(230, 210, 125, 0.418);
+   box-sizing: content-box;
+   width: 25%;
+   box-shadow:0 4px 8px 0 rgb(185, 181, 144);
+   margin: auto;
+   color: #c73b3b;
+   -webkit-animation: bounce-in 1s ease 2s 1 normal ;
+   animation: bounce-in 1s ease 2s 1 normal ;
+   }
+
+
+
+h2{text-align: center;
+  
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgba(230, 210, 125, 0.418);
+   box-sizing: content-box;
+   width: 30%;
+   box-shadow:0 4px 8px 0 rgb(185, 181, 144);
+   margin: auto;
+   margin-top: 2em;
+   clear: left;
+   color: #c73b3b;
+   -webkit-animation: bounce-in 1s ease 2s 1 normal ;
+   animation: bounce-in 1s ease 2s 1 normal ;}
+
+h3{text-align: center;
+   color: #c73b3b;
+   box-shadow:0 4px 4px 0 rgb(185, 181, 144);
+   margin: auto;
+   background-color: rgba(241, 227, 160, 0.849);
+
+   -webkit-animation: bounce-in 1s ease 2s 1 normal ;
+   animation: bounce-in 1s ease 2s 1 normal ;}
+
+p{font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   color:rgba(10, 10, 1, 0.856);
+   font-size: 90%;
+   
+   }  
+
+   
+@-webkit-keyframes bounce-in {
+    0%{
+      opacity: 0;
+      -webkit-transform: scale(.3);
+      transform: scale(.3);
+    }
+    50%{
+      opacity: 1;
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+    70%{
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    100%{
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes bounce-in {
+    0%{
+      opacity: 0;
+      transform: scale(.3);
+    }
+    50%{
+      opacity: 1;
+      transform: scale(1.0);
+    }
+    70%{
+      transform: scale(0.9);
+    }
+    100%{
+      transform: scale(1);
+    }   
+}   
+
+.grid-item{font-family: Arial, Helvetica, sans-serif;
+           float: left; 
+         
+           list-style: none;
+           height: 25em;
+          
+           box-shadow: 0 4px 4px 0 rgb(185, 181, 144);
+           background-color: rgba(230, 210, 125, 0.418);}
+
+img{width: 60%;
+    margin-top: 1em;
+    }
+
+
+#grid-floats{
+    box-sizing: border-box;
+    margin-right: 3%
+    }
+
+
+
+ 
+
+#grid-flex{ 
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-items: stretch;
+    margin-right: 3%
+   }
+
+
+
+
+
+
+
+
+    @media only screen and ( min-width:300px) and (max-width:480px)
+         {
+        .grid-item{width:40%;
+                   margin:5%}
+         #grid-floats .grid-item:first-child{width: 90%}
+        #grid-floats {margin-right: 10%}
+        #grid-flex{margin-right: 10%} }
+       
+    @media only screen and (min-width:700px) and (max-width:1024px)
+         {
+        .grid-item{width: 25%;
+                   margin: 4%;}
+        
+        #grid-flex .grid-item {width:25%;}
+
+        #grid-floats .grid-item:first-child {width:40%;
+                                             margin: 5%;}
+
+        #grid-floats .grid-item:nth-child(2) {width:40%;
+                                              margin: 5%;}     
+         }
+        
+    @media only screen and (min-width:1024px) 
+        {
+        .grid-item{width:15%;
+                   margin: 5%;}
+        
+
+        #grid-flex .grid-item {width:15%;
+                               margin: 5%;}
+        #grid-floats .grid-item:first-child{width: 40%}
+    
+        #grid-floats .grid-item:nth-child(2) {width:15%;}
+    
+        #grid-floats .grid-item:nth-child(3) {width:15%;}
+        
+        }
