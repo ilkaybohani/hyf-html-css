@@ -1,36 +1,148 @@
 body{ 
   background: url("back-pic.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-}         
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 22px;
+  }         
 
 .image{width: 35%;
   border-radius:120px;
   border-color:rgb(230, 226, 222);
   border-style:solid;
-  border-width:5px;}
+  border-width:5px;
+  box-shadow: 0 8px 8px 8px rgb(185, 181, 144);
+  -webkit-animation: appear 2s ease 0s 1 normal ;
+  animation: appear 2s ease 0s 1 normal ;
+}
 
 
-
-
-h3{color:rgb(206, 125, 20);
-  text-align:center;
-  background-color:rgb(190, 197, 199);
+h3{
+  text-align: center;
+  box-sizing: border-box;
+  width: 30%;
+  background: rgb(190, 197, 199);
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgba(230, 228, 212, 0.966);
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
   }
-ul{background-color:rgba(230, 228, 212, 0.966);
-   text-align: center;
-   list-style: inside;}
 
-ol{background-color:rgba(230, 228, 212, 0.966);
+
+
+ul{margin-top: 0.5em;
    text-align: center;
-   list-style-position: inside;}
+   list-style: none;
+   box-sizing: border-box;
+   box-shadow: 0 8px 8px 8px rgb(185, 181, 144);
+   margin: auto;
+   width: 40%;
+   border-radius:20px;
+   border-color:rgb(230, 226, 222);
+  border-style:solid;
+  border-width:5px; 
+  -webkit-animation: appear 2s ease 0s 1 normal ;
+  animation: appear 2s ease 0s 1 normal ;
+
+}
+
+ol{margin-top: 0.5em;
+   text-align: center;
+   list-style-position: inside;
+   box-sizing: border-box;
+   box-shadow: 0 8px 8px 8px rgb(185, 181, 144);
+   margin: auto;
+   width: 40%;
+   border-radius:20px;
+   border-color:rgb(230, 226, 222);
+   border-style:solid;
+   border-width:5px;
+   -webkit-animation: appear 2s ease 0s 1 normal ;
+  animation: appear 2s ease 0s 1 normal ;  
+  
+  }
+
+
+p { -webkit-animation: appear 2s ease 0s 1 normal ;
+  animation: appear 2s ease 0s 1 normal ;
+  } 
+
+ 
+@-webkit-keyframes appear {
+  0%{
+	opacity: 0;
+	-webkit-transform: scale3d(0.3, 0.3, 0.3);
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+  }
+}
+
+@keyframes appear {
+  0%{
+	opacity: 0;
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+  }
+} 
+  
+  
+
+
+ 
+  
 #pers {color:rgb(206, 125, 20);
        background-color:rgb(190, 197, 199);
-       text-align:center;}
+       text-align:center;
+       border-style: solid;
+       border-radius: 15px;
+       border-color: rgba(230, 228, 212, 0.966);
+       box-sizing: border-box;
+       width: 30%;
+       margin: auto;
+       margin-bottom: 1em;
+       margin-top: 1em;
+       border-radius:120px;
+       border-color:rgb(230, 226, 222);
+       border-style:solid;
+       border-width:5px;
+      }
 .me {color: rgb(206, 125, 20);}
 
-body{font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 18}
 
+p{margin-top: 0.5em;
+  padding: 0.5em;
+ box-sizing: border-box;
+ box-shadow: 0 8px 8px 8px rgb(185, 181, 144);
+ width: 40%;
+ margin: auto;
+ margin-bottom: 1em;
+ border-radius:40px;
+  border-color:rgb(230, 226, 222);
+  border-style:solid;
+  border-width:5px;
+  }
+
+
+  @media only screen and ( min-width:300px) and (max-width:480px)
+  {
+    p,ul,ol{width: 90%}
+    h3{width:70%}
+    #pers{width:70%}
+  }  
+
+
+  @media only screen and (min-width:700px) and (max-width:1024px)
+  {
+    p,ul,ol{width: 60%}
+    h3{width:35%}
+    #pers{width:35%}  
+  }
